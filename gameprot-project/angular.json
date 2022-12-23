@@ -24,7 +24,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-           "stylePreprocessorOptions": {
+            "stylePreprocessorOptions": {
               "includePaths": [
                 "src/styles.sass"
                 ]
