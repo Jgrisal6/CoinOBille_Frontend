@@ -1,0 +1,185 @@
+* {
+    margin:0;
+    font-size: 62.5%;
+}
+
+:root {
+    --amarillo: rgba(225, 191, 11, 1);
+    --negro: rgba(24, 24, 24, 1);
+    --gris: rgba(130, 130, 130, 1);
+    --blanco: rgba(255, 255, 255, 1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: valorant;
+    src: url(./Fonts/valorant/Valorant\ Font.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: BigSpace;
+    src: url(./Fonts/BigSpace-rPKx.ttf);
+}
+
+.head {
+    font-family: valorant;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head #logo-coin {
+    width: 60px;
+}
+
+.listado {
+    display: none;
+}
+input:checked  ~ ul{
+    display:block;
+}
+input {
+    display: none;
+}
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+    background: grey;
+}
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+    background: lightgrey; 
+}
+ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+}
+li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+    filter: brightness(110%);
+}
+
+.boton-jugar {
+    width: 50px;
+    font-size: 3rem;
+    font-family: BigSpace;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: valorant;
+    display: flex;
+    justify-content: center;
+    color: rgba(225, 191, 11, 1);
+}
+
+.banner {
+    width: 600px;
+    border-radius: 5%;
+}
+
+.banner #slide1 {
+    width: 600px;
+    border-radius: 5%;
+}
+
+.banner #slide2 {
+    width: 600px;
+    border-radius: 5%;
+}
+
+.banner #slide3 {
+    width: 600px;
+    border-radius: 5%;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.banner {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 533px;
+    height: 300px;
+}
+
+ul.banner li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity 0.5s;
+}
+
+ul.banner li img {
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+ul.banner li:first-child {
+    opacity: 1;
+}
+
+ul.banner li:target {
+    opacity: 1;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: var(--negro);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
