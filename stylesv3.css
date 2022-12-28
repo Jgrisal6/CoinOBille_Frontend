@@ -26,7 +26,19 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 0rem;
-  height: 6.5rem;
+  height: 6.5rem; 
+  border-style: dotted;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom-color:var(--negro);
+  border-bottom-width: 0.1rem;
+}
+button {
+  background-color: var(--amarillo);
+  font-family: BigSpace;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 /*Estilo de Lista desplegable*/
 input:checked  ~ ul{
@@ -67,8 +79,9 @@ input:checked ~ label {
   margin: 0;
   padding: 0.5rem;
   list-style: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.1rem solid grey;
   font-size: 1.5rem;
+  font-family: BigSpace;
 }
 .item:hover {
   filter: brightness(110%);
@@ -92,8 +105,8 @@ input:checked ~ label {
 }
 /*Section banner*/
 .main-title {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 7rem;
+  margin-bottom: 7.5rem;
   text-align: center;
 }
 h1{
@@ -138,6 +151,7 @@ ul.banner li img{
   height: 28rem;
   object-fit: cover;
   position: relative;
+  border-radius: 3rem;
 }
 .banner, li{
   margin: 0;
@@ -180,9 +194,9 @@ h2 {
 .conoce_a {
   background-color: var(--negro);
   text-align: center;
-  height: 75rem;
+  height: 85rem;
   padding-top: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 p {
   font-size: 2rem;
@@ -190,25 +204,22 @@ p {
   color: var(--blanco);
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-top: 1rem;
+  padding-top: 6rem;
   padding-bottom: 2.5rem;
   text-align: center;
 }
 .conoce_a .fotos-banner {
   width: 60rem;
+  margin-top: 5rem;
 }
-.botones_conoce_a {
-  width: 15rem;
-  height: 10rem;
-  font-size: 1rem;
+.botones_conoce_a button{
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   display: inline-block;
-}
-.botones_conoce_a .amarillo {
-  width: 5rem;
-  background-color: var(--amarillo);
 }
 /*Sección juego vs Demo*/
 .contenedor_imagen_juego {
@@ -236,23 +247,76 @@ p {
   justify-content: space-evenly;
   background-color: var(--negro);
   margin-top: 0;
+  margin-bottom: 0%;
+  height: 45rem;
 }
 .juego_vs_demo img{
   border-radius: 3rem;
-  width: 30rem;
+  width: 35rem;
+  opacity: 1;  
 }
-article .demo {
+.demo {
   border-color: var(--amarillo);
+  text-align: center;
+  position: relative;
+}
+.texto_demo {
+  text-align: center;
+  font-family: valorant;
+  color: var(--amarillo);
+  padding: 1rem;
+  height: 2rem;
+}
+.hover_demo {
+  position: absolute;
+  width: 25rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 7.5rem;
+  padding-left: 5rem;
+  display: none;
+}
+.demo:hover .hover_demo{
+  display: block;
+  cursor: pointer;
+}
+.demo:hover .imagen_demo{
+  display: block;
+  opacity: 0.4;
 }
 article .juego {
   border-color: var(--amarillo);
+}
+.texto_juego {
+  text-align: center;
+  font-family: valorant;
+  color: var(--amarillo);
+  padding: 1rem;
+  height: 2rem;
+}
+.hover_juego {
+  position: absolute;
+  width: 25rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 7.5rem;
+  padding-left: 5rem;
+  display: none;
+}
+.juego:hover .hover_juego{
+  display: block;
+  cursor: pointer;
+}
+.juego:hover .imagen_juego{
+  display: block;
+  opacity: 0.4;
 }
 /*Quienes somos*/
 .quienes_somos {
   background-color: var(--negro);
   text-align: center;
   margin-top: 0;
-  height: 35rem;
+  height: 40rem;
 }
 .contenido {
   display: grid;
@@ -263,6 +327,15 @@ article .juego {
 }
 .columna_izquierda {
   grid-area: 1 / 1 / 2 / 2;
+}
+.columna_izquierda button{
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
 }
 .columna_derecha {
   grid-area: 1 / 2 / 2 / 3;
@@ -279,6 +352,7 @@ article .juego {
 /*Testimonios*/
 .testimonios {
   text-align: center;
+  padding-top: 2rem;
 }
 .flex_testimonios {
   display: flex;
@@ -300,6 +374,7 @@ article .juego {
 }
 .Imagen_testimonio_1 {
   grid-area: Imagen_testimonio_1;
+  width: 10rem;
 }
 .Testimonio_2 {
   display: grid;
@@ -313,6 +388,7 @@ article .juego {
 }
 .Texto_testimonio_2 {
   grid-area: Texto_testimonio_2;
+  color: var(--negro);
 }
 .Imagen_testimonio_2 {
   grid-area: Imagen_testimonio_2;
@@ -329,6 +405,7 @@ article .juego {
 }
 .Texto_testimonio_3 {
   grid-area: Texto_testimonio_3;
+  color: var(--negro);
 }
 .Imagen_testimonio_3 {
   grid-area: Imagen_testimonio_3;
@@ -341,7 +418,7 @@ article .juego {
   text-align: center;
   background-color:var(--gris);
   height: 25rem;
-  padding: 8rem;
+  padding: 4rem;
 }
 .contenedor_imagenes {
   display: flex;
@@ -436,8 +513,18 @@ article .juego {
 #mensaje{
   width: 50rem;
   height: 37rem;
+  border-radius: 1rem;
 }
-/**************** foter ***********/
+.formularios_feedback button{
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+/**************** footer ***********/
 .footer {
   text-align: center;
   background-color: var(--negro);
@@ -449,4 +536,24 @@ article .juego {
 }
 h6 {
   margin: 0;
+}
+/*Botón para subir y bajar*/
+.simplescrollup__button {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  transition: 1s all;
+  z-index: 10000;
+}
+.simplescrollup__button--show {
+  transform: translateX(0);
+}
+.simplescrollup__button--hide {
+  transform: translateX(100px);
+}
+#img{
+  width:5rem;
+  height:5rem;
+  background-color:var(--amarillo);
+  border-radius: 5rem;
 }
