@@ -374,7 +374,7 @@ article .juego {
 }
 .Imagen_testimonio_1 {
   grid-area: Imagen_testimonio_1;
-  width: 10rem;
+  text-align: center;
 }
 .Testimonio_2 {
   display: grid;
@@ -411,7 +411,13 @@ article .juego {
   grid-area: Imagen_testimonio_3;
 }
 .persona_testimonio {
-  width: 250px;
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+}
+h5 {
+  font-size: 2.5rem;
+  font-family: Montserrat;
 }
 /*Patrocinadores*/
 .patrocinadores {
