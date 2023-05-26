@@ -1,25 +1,3 @@
-* {
-  margin: 0;
-  font-size: 62.5%;
-}
-@font-face {
-  font-family: valorant;
-  src: url(../../../assets/Fonts/valorant/ValorantFont.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(.../../../../../assets/Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: BigSpace;
-  src: url(../../../assets/Fonts/BigSpace-rPKx.ttf);
-}
-:root {
-  --amarillo: rgba(225, 191, 11, 1);
-  --negro: rgba(24, 24, 24, 1);
-  --gris: rgba(130, 130, 130, 1);
-  --blanco: rgba(255, 255, 255, 1);
-}
 /*Espacio para el header*/
 .head {
   display: flex;
@@ -27,22 +5,27 @@
   align-items: center;
   margin-top: 0rem;
   height: 6.5rem;
-  border-style: dotted;
+  border-style: inset;
   border-right: none;
   border-left: none;
-  border-top: none;
+  /* border-top: none; */
   border-bottom-color: var(--negro);
   border-bottom-width: 0.1rem;
+  background-color: var(--gris);
 }
 button {
   background-color: var(--amarillo);
   font-family: BigSpace;
   border-radius: 1rem;
   cursor: pointer;
+  width: 60%;
 }
 /*Estilo de Lista desplegable*/
 input:checked ~ ul {
   display: block;
+}
+.menu {
+  background-color: var(--amarillo);
 }
 input {
   display: none;
@@ -91,33 +74,12 @@ input:checked ~ label {
 .logo {
   width: 7rem;
 }
-.Foto_Perfil {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 7rem;
-}
-.Contenedor_Menu {
-  width: 16.5rem;
-  height: 6rem;
-}
-.Contenedor_Juego {
+.botones {
   display: flex;
-  justify-content: center;
-  height: 100%;
-  background: url(https://preview.redd.it/mrd7stj7vtv71.png?auto=webp&s=ea7d6f0593e9c9e533d72a3d0a15f394a04eff46);
-}
-.Contenedor_perfil {
-  display: flex;
-  justify-content: flex-end;
-  width: 16.5rem;
-  height: 6rem;
-}
-.botones_conoce_a {
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 25rem;
+  height: 4.5rem;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-.Juego {
-  margin-top: 2.4375rem;
-  border: 20px outset rgba(225, 191, 11, 1);
-}

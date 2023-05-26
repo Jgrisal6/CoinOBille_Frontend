@@ -1,0 +1,95 @@
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+ul a {
+  text-decoration: none;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.social-ico {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.social-ico2 {
+  width: 100%;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.social-ico3 {
+  width: 100%;
+  border-radius: 3rem;
+  background-color: white;
+}
+
+.end-footer {
+  display: inline-block;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2df;
+  background-image: url(../../../assets/imagenes/logo-fb-png-blanco.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+.social-icons:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+.social-icons:nth-of-type(2) {
+  background-image: url(../../../assets/imagenes/asset.png);
+}
+.social-icons:nth-of-type(3) {
+  background-image: url(../../../assets/imagenes/logo-ig-png-blanco.png);
+}
+.social-icons:nth-of-type(4) {
+  background-image: url(../../../assets/imagenes/logo-ig-png-blanco.png);
+}
+.footer-menu-container {
+  list-style-type: none;
+  color: #f2f2df;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.menu-items {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.menu-items:hover {
+  opacity: 1;
+}
+.copyright {
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+}

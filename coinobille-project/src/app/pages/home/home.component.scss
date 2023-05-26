@@ -1,0 +1,381 @@
+.main-title {
+  margin-top: 7rem;
+  margin-bottom: 7.5rem;
+  text-align: center;
+}
+h1 {
+  font-family: valorant;
+  font-size: 16rem;
+  color: var(--amarillo);
+  margin-top: 4rem;
+  line-height: 12rem;
+}
+h4 {
+  font-family: BigSpace;
+  font-size: 4rem;
+  color: var(--gris);
+  margin-top: 0.5rem;
+}
+.slider {
+  margin: auto;
+  width: 100rem;
+  height: 100%;
+}
+.contenedor_banner {
+  background-color: var(--negro);
+  width: 100%;
+  margin-top: 1.1rem;
+}
+ul.banner {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 62rem;
+}
+ul.banner li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+ul.banner li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 3rem;
+}
+.banner,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.opcion,
+li {
+  padding: 0.5rem;
+  list-style: none;
+}
+ul.banner li:first-child {
+  opacity: 1;
+}
+ul.banner li:target {
+  opacity: 1;
+}
+.opcion {
+  text-align: center;
+  margin: 0.8rem;
+}
+.opcion li {
+  display: inline-block;
+  text-align: center;
+}
+.opcion li a {
+  display: inline-block;
+  background-color: var(--gris);
+  text-decoration: none;
+  padding: 0.8rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+/*Seccion conoce a Muffious*/
+h2 {
+  font-family: BigSpace;
+  font-size: 5rem;
+  color: var(--amarillo);
+}
+.conoce_a {
+  background-color: var(--negro);
+  text-align: center;
+  height: 85rem;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+.fotos-banner {
+  border-radius: 3rem;
+  height: 37.5rem;
+}
+
+p {
+  font-size: 2rem;
+  font-family: Montserrat;
+  color: var(--blanco);
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+.conoce_a .fotos-banner {
+  width: 60rem;
+  margin-top: 5rem;
+}
+.botones_conoce_a button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+/*Sección juego vs Demo*/
+.contenedor_imagen_juego {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.contenedor_imagen_demo {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.juego {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.demo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.juego_vs_demo {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--negro);
+  margin-top: 0;
+  margin-bottom: 0%;
+  height: 45rem;
+}
+.juego_vs_demo img {
+  border-radius: 3rem;
+  width: 35rem;
+  opacity: 1;
+}
+.demo {
+  border-color: var(--amarillo);
+  text-align: center;
+  position: relative;
+}
+.texto_demo {
+  text-align: center;
+  font-family: valorant;
+  color: var(--amarillo);
+  padding: 1rem;
+  height: 2rem;
+}
+.hover_demo {
+  position: absolute;
+  width: 25rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 7.5rem;
+  padding-left: 5rem;
+  display: none;
+}
+.demo:hover .hover_demo {
+  display: block;
+  cursor: pointer;
+}
+.demo:hover .imagen_demo {
+  display: block;
+  opacity: 0.4;
+}
+article .juego {
+  border-color: var(--amarillo);
+}
+.texto_juego {
+  text-align: center;
+  font-family: valorant;
+  color: var(--amarillo);
+  padding: 1rem;
+  height: 2rem;
+}
+.hover_juego {
+  position: absolute;
+  width: 25rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 7.5rem;
+  padding-left: 5rem;
+  display: none;
+}
+.juego:hover .hover_juego {
+  display: block;
+  cursor: pointer;
+}
+.juego:hover .imagen_juego {
+  display: block;
+  opacity: 0.4;
+}
+/*Quienes somos*/
+.quienes_somos {
+  background-color: var(--negro);
+  text-align: center;
+  margin-top: 0;
+  height: 40rem;
+}
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.columna_izquierda {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.columna_izquierda button {
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+.columna_derecha {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.columna_derecha img {
+  width: 30rem;
+}
+.texto_demo {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.texto_juego {
+  grid-area: 2 / 1 / 3 / 2;
+}
+/*Testimonios*/
+.testimonios {
+  text-align: center;
+  padding-top: 2rem;
+}
+.flex_testimonios {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+.Testimonio_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Texto_testimonio_1"
+    "Imagen_testimonio_1";
+}
+.Texto_testimonio_1 {
+  grid-area: Texto_testimonio_1;
+  color: var(--negro);
+}
+.Imagen_testimonio_1 {
+  grid-area: Imagen_testimonio_1;
+  text-align: center;
+}
+.Testimonio_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Texto_testimonio_2"
+    "Imagen_testimonio_2";
+}
+.Texto_testimonio_2 {
+  grid-area: Texto_testimonio_2;
+  color: var(--negro);
+}
+.Imagen_testimonio_2 {
+  grid-area: Imagen_testimonio_2;
+}
+.Testimonio_3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Texto_testimonio_3"
+    "Imagen_testimonio_3";
+}
+.Texto_testimonio_3 {
+  grid-area: Texto_testimonio_3;
+  color: var(--negro);
+}
+.Imagen_testimonio_3 {
+  grid-area: Imagen_testimonio_3;
+}
+.persona_testimonio {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+}
+h5 {
+  font-size: 2.5rem;
+  font-family: Montserrat;
+}
+/*Patrocinadores*/
+.patrocinadores {
+  text-align: center;
+  background-color: black;
+  height: 25rem;
+  padding: 4rem;
+}
+.contenedor_imagenes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6.5rem;
+}
+.img_patrocinador {
+  width: 10rem;
+  height: 10rem;
+}
+.img_patrocinador3 {
+  width: 30rem;
+  height: 10rem;
+}
+
+/*Integrantes*/
+.equipo {
+  background-color: var(--gris);
+}
+.Integrantes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px 16px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Integrante_1 Integrante_2"
+    "Integrante_3 Integrante_4";
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+.Integrante_1 {
+  grid-area: Integrante_1;
+}
+.Integrante_2 {
+  grid-area: Integrante_2;
+}
+.Integrante_3 {
+  grid-area: Integrante_3;
+}
+.Integrante_4 {
+  grid-area: Integrante_4;
+}
+.Persona {
+  display: flex;
+}
+.Persona_txt {
+  flex-grow: 1;
+}
