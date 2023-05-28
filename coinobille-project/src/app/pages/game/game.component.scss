@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: Montserrat;
-  src: url(.../../../../../assets/Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: BigSpace;
@@ -21,19 +21,6 @@
   --blanco: rgba(255, 255, 255, 1);
 }
 /*Espacio para el header*/
-.head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0rem;
-  height: 6.5rem;
-  border-style: dotted;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  border-bottom-color: var(--negro);
-  border-bottom-width: 0.1rem;
-}
 button {
   background-color: var(--amarillo);
   font-family: BigSpace;
@@ -96,27 +83,17 @@ input:checked ~ label {
   height: 6rem;
   border-radius: 7rem;
 }
-.Contenedor_Menu {
-  width: 16.5rem;
-  height: 6rem;
-}
 .Contenedor_Juego {
   display: flex;
   justify-content: center;
   height: 100%;
   background: url(https://preview.redd.it/mrd7stj7vtv71.png?auto=webp&s=ea7d6f0593e9c9e533d72a3d0a15f394a04eff46);
-}
-.Contenedor_perfil {
-  display: flex;
-  justify-content: flex-end;
-  width: 16.5rem;
-  height: 6rem;
+  margin-top:0;
 }
 .botones_conoce_a {
   display: flex;
   justify-content: space-evenly;
 }
-
 .Juego {
   margin-top: 2.4375rem;
   border: 20px outset rgba(225, 191, 11, 1);

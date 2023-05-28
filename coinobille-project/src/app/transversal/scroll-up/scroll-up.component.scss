@@ -1,0 +1,23 @@
+.button {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  transition: 1s all;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 3rem;
+  background-color: var(--amarillo);
+
+}
+.simplescrollup__button--show {
+  transform: translateX(0);
+}
+.simplescrollup__button--hide {
+  transform: translateX(100px);
+}
+#img {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--amarillo);
+  border-radius: 5rem;
+}

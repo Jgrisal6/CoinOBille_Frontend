@@ -1,14 +1,13 @@
 .main-title {
-  margin-top: 7rem;
-  margin-bottom: 7.5rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 h1 {
   font-family: valorant;
-  font-size: 16rem;
+  font-size: 14rem;
   color: var(--amarillo);
-  margin-top: 4rem;
-  line-height: 12rem;
+  line-height: 10rem;
 }
 h4 {
   font-family: BigSpace;
@@ -24,7 +23,7 @@ h4 {
 .contenedor_banner {
   background-color: var(--negro);
   width: 100%;
-  margin-top: 1.1rem;
+  margin-top: 1rem;
 }
 ul.banner {
   margin: auto;
@@ -91,9 +90,9 @@ h2 {
 .conoce_a {
   background-color: var(--negro);
   text-align: center;
-  height: 85rem;
-  padding-top: 2rem;
-  margin-top: 1rem;
+  height: 80rem;
+  padding-top: 0rem;
+  margin-top: 0rem;
 }
 .fotos-banner {
   border-radius: 3rem;
@@ -106,8 +105,8 @@ p {
   color: var(--blanco);
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-top: 6rem;
-  padding-bottom: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .conoce_a .fotos-banner {
@@ -122,6 +121,10 @@ p {
   justify-content: center;
   align-items: center;
   display: inline-block;
+  background-color: var(--amarillo);
+  font-family: BigSpace;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 /*Sección juego vs Demo*/
 .contenedor_imagen_juego {
@@ -148,9 +151,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--negro);
-  margin-top: 0;
-  margin-bottom: 0%;
-  height: 45rem;
+  height: 50rem;
 }
 .juego_vs_demo img {
   border-radius: 3rem;
@@ -161,6 +162,7 @@ p {
   border-color: var(--amarillo);
   text-align: center;
   position: relative;
+  margin-bottom: 2rem;
 }
 .texto_demo {
   text-align: center;
@@ -218,7 +220,7 @@ article .juego {
   background-color: var(--negro);
   text-align: center;
   margin-top: 0;
-  height: 40rem;
+  height: 50rem;
 }
 .contenido {
   display: grid;
@@ -255,11 +257,14 @@ article .juego {
 .testimonios {
   text-align: center;
   padding-top: 2rem;
+  height: 60rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .flex_testimonios {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2.5rem;
+
 }
 .Testimonio_1 {
   display: grid;
@@ -314,8 +319,8 @@ article .juego {
   grid-area: Imagen_testimonio_3;
 }
 .persona_testimonio {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 150px;
 }
 h5 {
@@ -343,7 +348,6 @@ h5 {
   width: 30rem;
   height: 10rem;
 }
-
 /*Integrantes*/
 .equipo {
   background-color: var(--gris);
@@ -358,7 +362,7 @@ h5 {
     "Integrante_1 Integrante_2"
     "Integrante_3 Integrante_4";
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
   background-color: black;
 }
 .Integrante_1 {
@@ -373,9 +377,20 @@ h5 {
 .Integrante_4 {
   grid-area: Integrante_4;
 }
-.Persona {
+.contenedor_persona {
   display: flex;
+}
+.Persona {
+  display:flexbox;
+  justify-content: center;
 }
 .Persona_txt {
   flex-grow: 1;
+  display: flex;
 }
+.Foto_persona {
+  height: 21rem;
+  border-radius: 150rem;
+}
+
+

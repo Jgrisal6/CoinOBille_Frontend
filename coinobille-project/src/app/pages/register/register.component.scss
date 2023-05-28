@@ -2,49 +2,22 @@
 *:before,
 *:after {
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   box-sizing: border-box;
 }
 @font-face {
   font-family: valorant;
   src: url(../../../assets/Fonts/valorant/ValorantFont.ttf);
-}
-body {
-  background-color: #080710;
-  background-image: url(https://preview.redd.it/mrd7stj7vtv71.png?auto=webp&s=ea7d6f0593e9c9e533d72a3d0a15f394a04eff46);
-}
-.background {
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-}
-.background .shape {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius: 50%;
-}
-.shape:first-child {
-  background: linear-gradient(#1845ad, #23a2f6);
-  left: -80px;
-  top: -80px;
-}
-.shape:last-child {
-  background: linear-gradient(to right, #ff512f, #f09819);
-  right: -30px;
-  bottom: -80px;
+  font-family: Montserrate;
+  src: url(../../../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 form {
-  height: 520px;
+  height: 560px;
   width: 400px;
   background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
+  position:relative;
+  left: 35%;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
@@ -63,12 +36,14 @@ form h3 {
   font-weight: 500;
   line-height: 42px;
   text-align: center;
+  color: #080710;
 }
-label {
+form label {
   display: block;
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
+  color: #080710;
 }
 input {
   display: block;
@@ -82,21 +57,23 @@ input {
   font-weight: 300;
 }
 ::placeholder {
-  color: #e5e5e5;
+  color: #d8d5d5;
+  font-family: Montserrate;
+  font-size: larger;
 }
 button {
   margin-top: 50px;
   width: 100%;
   background-color: rgba(225, 191, 11, 1);
   color: #080710;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
 }
 .social {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
 }
 .social div {
@@ -116,4 +93,5 @@ button {
 }
 .social i {
   margin-right: 4px;
+  font-size: 10px;
 }

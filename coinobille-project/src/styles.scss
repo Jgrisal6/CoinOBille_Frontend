@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: valorant;
+  src: url(./assets/Fonts/valorant/ValorantFont.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: BigSpace;
+  src: url(./assets/Fonts/BigSpace-rPKx.ttf);
+}
+:root {
+  --amarillo: rgba(225, 191, 11, 1);
+  --negro: rgba(24, 24, 24, 1);
+  --gris: rgba(130, 130, 130, 1);
+  --blanco: rgba(255, 255, 255, 1);
+}

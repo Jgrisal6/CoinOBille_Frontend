@@ -6,22 +6,10 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { GameComponent } from './pages/game/game.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-  },
-  {
-    path: 'register',
-    component: RegisterComponent,
-  },
-  {
-    path: 'menu',
-    component: MenuComponent,
-  },
-  {
-    path: 'game',
-    component: GameComponent,
-  },
+  {path: 'home', component: HomeComponent, pathMatch: 'full'},
+  {path: 'register', component: RegisterComponent},
+  {path: 'menu', component: MenuComponent},
+  {path: 'game',component: GameComponent},
 ];
 
 @NgModule({

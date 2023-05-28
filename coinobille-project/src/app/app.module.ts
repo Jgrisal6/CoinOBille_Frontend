@@ -9,6 +9,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { GameComponent } from './pages/game/game.component';
 import { FooterComponent } from './transversal/footer/footer.component';
 import { HeaderComponent } from './transversal/header/header.component';
+import { ScrollUpComponent } from './transversal/scroll-up/scroll-up.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './transversal/header/header.component';
     MenuComponent,
     GameComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ScrollUpComponent
   ],
   imports: [
     BrowserModule,

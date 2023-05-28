@@ -8,17 +8,19 @@
   border-style: inset;
   border-right: none;
   border-left: none;
-  /* border-top: none; */
+  border-top: none;
   border-bottom-color: var(--negro);
   border-bottom-width: 0.1rem;
   background-color: var(--gris);
+  width: 100%;
 }
 button {
   background-color: var(--amarillo);
   font-family: BigSpace;
   border-radius: 1rem;
   cursor: pointer;
-  width: 60%;
+  width: 100%;
+  font-size: 2rem;
 }
 /*Estilo de Lista desplegable*/
 input:checked ~ ul {
@@ -26,6 +28,7 @@ input:checked ~ ul {
 }
 .menu {
   background-color: var(--amarillo);
+  margin-left: 1.5rem;
 }
 input {
   display: none;
@@ -72,12 +75,14 @@ input:checked ~ label {
   cursor: pointer;
 }
 .logo {
-  width: 7rem;
+  width: 8rem;
+  margin-left: rem;
 }
 .botones {
   display: flex;
-  justify-content: space-between;
-  width: 25rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30rem;
   height: 4.5rem;
   font-weight: bold;
   font-size: 3rem;
