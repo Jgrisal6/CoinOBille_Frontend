@@ -6,7 +6,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { GameComponent } from './pages/game/game.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent, pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'menu', component: MenuComponent},
   {path: 'game',component: GameComponent},

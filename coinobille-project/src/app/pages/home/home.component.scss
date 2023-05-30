@@ -216,7 +216,7 @@ article .juego {
   opacity: 0.4;
 }
 /*Quienes somos*/
-.quienes_somos {
+#quienes_somos {
   background-color: var(--negro);
   text-align: center;
   margin-top: 0;
@@ -254,7 +254,7 @@ article .juego {
   grid-area: 2 / 1 / 3 / 2;
 }
 /*Testimonios*/
-.testimonios {
+#testimonios {
   text-align: center;
   padding-top: 2rem;
   height: 60rem;
@@ -328,7 +328,7 @@ h5 {
   font-family: Montserrat;
 }
 /*Patrocinadores*/
-.patrocinadores {
+#patrocinadores {
   text-align: center;
   background-color: black;
   height: 25rem;

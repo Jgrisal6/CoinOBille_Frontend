@@ -8,7 +8,6 @@
   border-style: inset;
   border-right: none;
   border-left: none;
-  border-top: none;
   border-bottom-color: var(--negro);
   border-bottom-width: 0.1rem;
   background-color: var(--gris);
@@ -23,10 +22,10 @@ button {
   font-size: 2rem;
 }
 /*Estilo de Lista desplegable*/
-input:checked ~ ul {
+input:checked + .icono-menu + .listado {
   display: block;
 }
-.menu {
+.icono-menu {
   background-color: var(--amarillo);
   margin-left: 1.5rem;
 }
@@ -58,6 +57,9 @@ input:checked ~ label {
   padding: 0;
   width: 14rem;
   display: none;
+  position: absolute;
+  background-color: var(--gris);
+  border: 0.1rem solid var(--negro);
 }
 .listado .item {
   display: block;
@@ -76,11 +78,12 @@ input:checked ~ label {
 }
 .logo {
   width: 8rem;
-  margin-left: rem;
+  margin-left: 24rem;
 }
 .botones {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
   align-items: center;
   width: 30rem;
   height: 4.5rem;
